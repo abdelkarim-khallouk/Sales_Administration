@@ -1,0 +1,185 @@
+
+/* main-header */
+.main-header {
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: height: 50px;
+    max-height: 100px;
+    z-index: 3;
+}
+
+/* LOGO */
+
+.main-header .logo {
+    width: 230px;
+    height: 50px;
+    background-color: yellow;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.main-header .logo .logo-min {
+    display: none;
+}
+
+.main-header .logo .logo-lg {
+    display: block;
+}
+/* END LOGO */
+
+/* Button collapse */
+#btn-sidebar-collapse {
+    padding: 10px 17px;
+    margin: 5px;
+}
+
+
+/* HEADER NAVIGATION BAR */
+.main-header .navig {
+    background-color: aqua;
+    line-height: 50px;
+    margin: 0;
+    height: 100%;
+    display: block;
+}
+
+.main-header ul {
+    float: right;
+
+}
+
+.main-header ul.navig li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* END HEADER NAVIGATION BAR */
+
+
+/* MAIN-SIDEBAR */
+.main-sidebar {
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 230px;
+    padding-top: 50px;
+    z-index: 2;
+}
+
+.main-sidebar .sidebar ul.navig {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    background-color: #ddd;
+}
+
+.main-sidebar .sidebar ul.navig li {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.main-sidebar .sidebar ul.navig li:hover {
+    background-color: #ccc;
+}
+
+
+/* END MAIN-SIDEBAR */
+
+
+/* CONTENT-WRAPPER */
+.content-wrapper {
+    background-color: yellow;
+    margin-top: 50px;
+    margin-left: 230px;
+    min-height: 550px;
+    padding: 10px;
+    z-index: 1;
+}
+
+/* END CONTENT-WRAPPER */
+
+/* MAIN-FOOTER */
+.main-footer {
+    background-color: green;
+    margin-left: 230px;
+    padding: 10px;
+}
+
+.main-footer p {
+    text-align: center;
+}
+
+/* END MAIN-FOOTER */
+
+
+/* -- HAS-SIDEBAR --  */
+.has-mini-sidebar .main-sidebar {
+
+}
+
+/* LOGO */
+.has-mini-sidebar .main-header .logo .logo-min {
+    display: block;
+}
+
+.has-mini-sidebar .main-header .logo .logo-lg {
+    display: none;
+}
+
+.has-mini-sidebar .main-header .logo,
+.has-mini-sidebar .main-sidebar {
+    width: 60px;
+}
+
+.has-mini-sidebar .content-wrapper,
+.has-mini-sidebar .main-footer {
+    margin-left: 60px;
+}
+
+/* -- END HAS-SIDEBAR -- */
+
+
+/* -- MEDIA QUERYS -- */
+@media screen and (max-width: 767px) {
+
+    .main-sidebar {
+        display: none;
+    }
+
+    .content-wrapper, .main-footer {
+        margin-left: 0;
+    }
+
+    .content-wrapper {
+        padding-top: 50px;
+    }
+
+    .main-header .logo {
+        width: 60px;
+    }
+
+    .main-header .logo .logo-min {
+        display: block;
+    }
+
+    .main-header .logo .logo-lg {
+        display: none;
+    }
+
+    .has-mini-sidebar .main-sidebar {
+        display: block;
+    }
+}
+
+
+
+
