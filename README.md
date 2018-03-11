@@ -1,9 +1,11 @@
 # Sales Administration application
 
-using :
+- Customers, suppliers management
+- Sales, purchases management
+- Quotation, purchase orders management
+- Delivery management
+- Payments, invoices management
+- stock management
+- Users management, 
+etc..
 
-- HTML
-- CSS
-- Javascript
-- jQuery
-- PHP & MySQL
