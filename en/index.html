@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sales manager</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/ltr.css"/>
+</head>
+<body class="">
+
+    <!-- BEGIN WRAPPER -->
+    <div class="wrapper">
+
+        <!-- MAIN-HEADER -->
+        <header class="main-header">
+
+            <!-- LOGO -->
+            <a class="logo" href="#">
+                <span class="logo-min"><b>CwA</b></span>
+                <span class="logo-lg"><b>CMwApp</b></span>
+            </a>
+            <!-- END LOGO -->
+            
+            <button id="btn-sidebar-collapse" class="btn btn-primary"> = </button>
+            
+            <ul class="navig">
+                <li>option1</li>
+                <li>option2</li>
+                <li><a href="../index.html">AR</a></li>
+            </ul>
+        </header>
+        <!-- END MAIN-HEADER -->
+
+        <!-- MAIN-SIDEBAR -->
+        <aside class="main-sidebar">
+
+            <!-- SIDEBAR -->
+            <section class="sidebar">
+                <ul class="navig">
+                    <li>option1</li>
+                    <li>option2</li>
+                    <li>option3</li>
+                    <li>option4</li>
+                </ul>
+            </section>
+            <!-- END SIDEBAR -->
+        </aside>
+        <!-- END MAIN-SIDEBAR -->
+
+        <!-- CONTENT-WRAPPER -->
+        <div class="content-wrapper">
+
+            <!-- CONTENT-HEADER -->
+            <section class="content-header">
+                <h1> Current page </h1>
+            </section>
+            <!-- END CONTENT-HEADER -->
+
+            <!-- CONTENT -->
+            <section class="content">
+
+                <p>Content</p>
+
+            </section>
+            <!-- END CONTENT -->
+
+        </div>
+        <!-- END CONTENT-WRAPPER -->
+
+        <!-- MAIN-FOOTER -->
+        <footer class="main-footer">
+            <p>All copy right!</p>
+        </footer>
+        <!-- END MAIN-FOOTER -->
+    </div>
+    <!-- END WRAPPER -->
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn-sidebar-collapse').click(function() {
+                                             
+                if ( $('body').hasClass('has-mini-sidebar') )
+                    $('body').removeClass('has-mini-sidebar')
+                else
+                    $('body').addClass('has-mini-sidebar')
+                });
+        });
+    </script>
+</body>
+</html>
